@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      background-color: #FDDDAA;
+      font-family: 'Muli', sans-serif;
+      color: black;
+    }
+
+    h2 {
+      color: #C70017;
+    }
+
+    #cereal-img {
+      height: 20%;
+      width: 20%;
+    }
+
+    #cereal-count {
+      position: absolute;
+      background-color: #FEB19F;
+    }
+
+    td {
+      text-align: center;
+    }
+
+  </style>
+
+  <title>Cereals</title>
+
+</head>
+
+<body>
+  <center>
+    <h1> What cereal should I eat today? </h1>
+
+    <table id="cereal-count">
+      <tr>
+        <th>Cereal</th>
+        <th>Count</th>
+      </tr>
+      <tr>
+        <td>Frosted Flakes</td>
+        <td id="ff-count">0</td>
+      </tr>
+      <tr>
+        <td>Lucky Charms</td>
+        <td id="lc-count">0</td>
+      </tr>
+      <tr>
+        <td>Captain Crunch</td>
+        <td id="cc-count">0</td>
+      </tr>
+    </table>
+
+    <h2 id="cereal-name">Cereal Name</h2>
+
+    <img id="cereal-img" src="shelf.png"></img>
+    <br></br>
+
+    <button type="button" onclick=changeCereal()>Generate Random Cereal</button>
+  </center>
+
+</body>
+
+<script src="cereal3.js"></script>
+
+</html>
